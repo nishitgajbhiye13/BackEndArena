@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/user/submissions
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJzdWIiOiJhZG1pbkBiYWNrZW5kYXJlbmEuY29tIiwiaWF0IjoxNzY4NjQ3OTI3LCJleHAiOjE3Njg2NTE1Mjd9.w4V4TQInzQxXrU4FRdXUc2lw7AQcGIYvagYzci-iMeo
+Content-Type: application/json
+
+{
+  "attemptId": 5,
+  "language": "JAVA",
+  "code": "public class Main { public static void main(String[] args) { System.out.println(\"Hello\"); } }"
+}
