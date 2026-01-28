@@ -1,0 +1,2 @@
+GET http://localhost:8080/api/user/submissions/26
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJzdWIiOiJhZG1pbkBiYWNrZW5kYXJlbmEuY29tIiwiaWF0IjoxNzY4NjQzNTgwLCJleHAiOjE3Njg2NDcxODB9.x0phVHSmu_EI4Qxgu3Y0iTTcXo4YOq9QM1PqMHyPL4s
