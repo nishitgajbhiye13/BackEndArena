@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/categories
+Content-Type: application/json
+
+{
+  "name": "Core java",
+  "description": "fundamentals"
+}

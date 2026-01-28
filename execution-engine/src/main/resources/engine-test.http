@@ -1,0 +1,20 @@
+### Test Java Execution – Addition
+POST http://localhost:8080/execute
+Content-Type: application/json
+
+{
+  "submissionId": 1,
+  "sourceCode": "import java.util.*; public class Main { public static void main(String[] args){ Scanner sc=new Scanner(System.in); int a=sc.nextInt(); int b=sc.nextInt(); System.out.println(a+b); }}",
+  "language": "JAVA",
+  "testCases": [
+    {
+      "input": "2 3",
+      "expectedOutput": "5",
+      "hidden": false
+    }
+  ],
+  "executionLimits": {
+    "timeLimitMs": 2000,
+    "memoryLimitMb": 256
+  }
+}

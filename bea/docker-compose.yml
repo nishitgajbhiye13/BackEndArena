@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: bea-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: bea_db
+      POSTGRES_USER: bea_user
+      POSTGRES_PASSWORD: bea_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - bea_pg_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: bea-pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@bea.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    volumes:
+      - bea_pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  bea_pg_data:
+  bea_pgadmin_data:
